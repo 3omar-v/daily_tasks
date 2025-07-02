@@ -155,37 +155,38 @@
     var jop = document.getElementById("jop").value;
     var card = document.createElement("div");
 
-    card.innerHTML = `
-            <img src="images/pic.png" alt="no image">
-            <div>
-                <h4>${name} </h4>
-                <h4 class="h">${jop}</h4>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore omnis, at dolorum veritatis ad autem neque consequatur officiis commodi qui suscipit dolorem odit, eaque velit laboriosam! Aspernatur architecto odit rem?</p>
-                <ul class="card_list">
-                </ul>
-                <button class="button_1">View Profile</button>
-                <button class="button_2">Contacts</button>
-            </div>
+    card.innerHTML = 
+    `
+        <img src="images/pic.png" alt="no image">
+        <div>
+            <h4>${name} </h4>
+            <h4 class="h">${jop}</h4>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore omnis, at dolorum veritatis ad autem neque consequatur officiis commodi qui suscipit dolorem odit, eaque velit laboriosam! Aspernatur architecto odit rem?</p>
+            <ul class="card_list">
+            </ul>
+            <button class="button_1">View Profile</button>
+            <button class="button_2">Contacts</button>
+        </div>
     `;
 
     var new_card = document.getElementById("new_card");
     new_card.appendChild(card);
 
     document.querySelector(".overly").remove();
-}
+    }
 
-function skill() 
-{
-    var li = document.createElement("li");
-    var value = document.getElementById("new_skill").value;
+    function skill() 
+    {
+        var li = document.createElement("li");
+        var value = document.getElementById("new_skill").value;
 
-    li.innerText = value;
-    document.querySelector(".list").appendChild(li);
-}
+        li.innerText = value;
+        document.querySelector(".list").appendChild(li);
+    }
 
-function removeAllCards() {
-    document.getElementById("new_card").innerHTML = "";
-}
+    function removeAllCards() {
+        document.getElementById("new_card").innerHTML = "";
+    }
 
 </script>
 
